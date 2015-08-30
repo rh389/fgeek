@@ -1,0 +1,311 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: fGeek Theme\n"
+"POT-Creation-Date: 2015-08-30 22:24+0200\n"
+"PO-Revision-Date: 2015-08-30 22:24+0200\n"
+"Last-Translator: \n"
+"Language-Team: Tishonator Team <info@tishonator.com>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ../"
+"fgeek\n"
+
+#: ../search.php:19
+#, php-format
+msgid "You searched for \"%s\". Here are the results:"
+msgstr ""
+
+#: ../searchform.php:20
+msgid "Search..."
+msgstr ""
+
+#: ../content-none.php:18
+msgid "Oh no! Article not found! 404 error!"
+msgstr ""
+
+#: ../content-none.php:22
+msgid "No Results Found!"
+msgstr ""
+
+#: ../content-none.php:27
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../single.php:33
+msgid "Pages:"
+msgstr ""
+
+#: ../footer.php:27
+msgid "fGeek Theme"
+msgstr ""
+
+#: ../footer.php:28
+msgid "WordPress"
+msgstr ""
+
+#: ../sidebar-home.php:27
+msgid "Home Col Widget 1"
+msgstr ""
+
+#: ../sidebar-home.php:34
+msgid ""
+"This is first homepage widget area. To customize it, please navigate to "
+"Admin Panel -> Appearance -> Widgets and add widgets to Homepage Column #1."
+msgstr ""
+
+#: ../sidebar-home.php:51
+msgid "Home Col Widget 2"
+msgstr ""
+
+#: ../sidebar-home.php:58
+msgid ""
+"This is second homepage widget area. To customize it, please navigate to "
+"Admin Panel -> Appearance -> Widgets and add widgets to Homepage Column #2."
+msgstr ""
+
+#: ../sidebar-home.php:75
+msgid "Home Col Widget 3"
+msgstr ""
+
+#: ../sidebar-home.php:82
+msgid ""
+"This is third homepage widget area. To customize it, please navigate to "
+"Admin Panel -> Appearance -> Widgets and add widgets to Homepage Column #3."
+msgstr ""
+
+#: ../comments.php:54
+#: ../content-page.php:37
+#: ../content.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#: ../content-page.php:26
+#: ../content.php:86
+#: ../content.php:101
+msgid "Read More..."
+msgstr ""
+
+#: ../content-page.php:37
+#: ../content.php:66
+msgid "No Comments"
+msgstr ""
+
+#: ../content-page.php:37
+#: ../content.php:66
+msgid "1 Comment"
+msgstr ""
+
+#: ../content-page.php:37
+#: ../content.php:66
+msgid "% Comments"
+msgstr ""
+
+#: ../content-page.php:42
+#: ../content.php:71
+msgid "Edit"
+msgstr ""
+
+#: ../content.php:113
+msgid "Categories:"
+msgstr ""
+
+#: ../content.php:120
+msgid "Tags:"
+msgstr ""
+
+#: ../functions.php:52
+msgid "primary menu"
+msgstr ""
+
+#: ../functions.php:180
+msgid "Follow us on Facebook"
+msgstr ""
+
+#: ../functions.php:186
+msgid "Follow us on Google+"
+msgstr ""
+
+#: ../functions.php:192
+msgid "Follow us on Twitter"
+msgstr ""
+
+#: ../functions.php:198
+msgid "Follow us on LinkeIn"
+msgstr ""
+
+#: ../functions.php:204
+msgid "Follow us on Instagram"
+msgstr ""
+
+#: ../functions.php:210
+msgid "Follow our RSS Feeds"
+msgstr ""
+
+#: ../functions.php:216
+msgid "Follow us on Tumblr"
+msgstr ""
+
+#: ../functions.php:222
+msgid "Follow us on Youtube"
+msgstr ""
+
+#: ../functions.php:228
+msgid "Follow us on Pinterest"
+msgstr ""
+
+#: ../functions.php:234
+msgid "Follow us on VK"
+msgstr ""
+
+#: ../functions.php:240
+msgid "Follow us on Flickr"
+msgstr ""
+
+#: ../functions.php:246
+msgid "Follow us on Vine"
+msgstr ""
+
+#: ../functions.php:303
+msgid "Sidebar Widget Area"
+msgstr ""
+
+#: ../functions.php:305
+msgid "The sidebar widget area"
+msgstr ""
+
+#: ../functions.php:325
+#: ../functions.php:620
+#: ../functions.php:656
+#: ../functions.php:692
+#: ../functions.php:729
+#: ../functions.php:765
+msgid ""
+"<h2>Lorem ipsum dolor</h2><p>Lorem ipsum dolor sit amet, consectetur "
+"adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
+"aliqua.</p><a class=\"btn\" title=\"Read more\" href=\"#\">Read more</a>"
+msgstr ""
+
+#: ../functions.php:334
+#, php-format
+msgid "image %s"
+msgstr ""
+
+#: ../functions.php:354
+#, php-format
+msgid ""
+"The fGeek theme is a free version of the professional WordPress theme tGeek. "
+"<a href=\"%s\" class=\"button-primary\" target=\"_blank\">Get tGeek Theme</"
+"a><br />"
+msgstr ""
+
+#: ../functions.php:370
+msgid "Social Sites"
+msgstr ""
+
+#: ../functions.php:387
+msgid "Facebook Page URL"
+msgstr ""
+
+#: ../functions.php:406
+msgid "Google+ Page URL"
+msgstr ""
+
+#: ../functions.php:425
+msgid "Twitter Page URL"
+msgstr ""
+
+#: ../functions.php:444
+msgid "LinkedIn Page URL"
+msgstr ""
+
+#: ../functions.php:463
+msgid "instagram Page URL"
+msgstr ""
+
+#: ../functions.php:482
+msgid "RSS Feeds URL"
+msgstr ""
+
+#: ../functions.php:501
+msgid "Tumblr Page URL"
+msgstr ""
+
+#: ../functions.php:520
+msgid "YouTube channel URL"
+msgstr ""
+
+#: ../functions.php:539
+msgid "Pinterest Page URL"
+msgstr ""
+
+#: ../functions.php:558
+msgid "VK Page URL"
+msgstr ""
+
+#: ../functions.php:577
+msgid "Flickr Page URL"
+msgstr ""
+
+#: ../functions.php:596
+msgid "Vine Page URL"
+msgstr ""
+
+#: ../functions.php:610
+msgid "Slider"
+msgstr ""
+
+#: ../functions.php:627
+msgid "Slide #1 Content"
+msgstr ""
+
+#: ../functions.php:645
+msgid "Slide 1 Image"
+msgstr ""
+
+#: ../functions.php:663
+msgid "Slide #2 Content"
+msgstr ""
+
+#: ../functions.php:681
+msgid "Slide 2 Image"
+msgstr ""
+
+#: ../functions.php:699
+msgid "Slide #3 Content"
+msgstr ""
+
+#: ../functions.php:717
+msgid "Slide 3 Image"
+msgstr ""
+
+#: ../functions.php:736
+msgid "Slide #4 Content"
+msgstr ""
+
+#: ../functions.php:754
+msgid "Slide 4 Image"
+msgstr ""
+
+#: ../functions.php:772
+msgid "Slide #5 Content"
+msgstr ""
+
+#: ../functions.php:790
+msgid "Slide 5 Image"
+msgstr ""
+
+#: ../functions.php:803
+msgid "Footer"
+msgstr ""
+
+#: ../functions.php:820
+msgid "Copyright Text"
+msgstr ""
