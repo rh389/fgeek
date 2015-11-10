@@ -1,9 +1,9 @@
 == fGeek WordPress Theme ==
 
 Contributors: tishonator
-Tags: blue, blue, white, gray, light, two-columns, right-sidebar, fixed-layout,
+Tags: blue, blue, white, gray, light, two-columns, right-sidebar,
 fluid-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu,
-featured-images, full-width-template, post-formats, sticky-post, theme-options, threaded-comments,
+featured-images, post-formats, sticky-post, theme-options, threaded-comments,
 translation-ready
 Requires at least: 4.2.1
 Tested up to: 4.3.0
@@ -45,6 +45,8 @@ The exceptions to this license are as follows:
 *
 * js/jquery.bxslider.js    Released under the MIT license - http://opensource.org/licenses/MIT
 * js/jquery.bxslider.min.js Released under the MIT license - http://opensource.org/licenses/MIT
+*
+* Noto Sans (default theme font), Released under Apache License, version 2.0 license - http://www.apache.org/licenses/LICENSE-2.0.html
 *
 * images/slider/1.jpg CC0 Public Domain Reference: http://pixabay.com/go/?t=%2Fservice%2Fterms%2F%23download_terms, Image Source: https://pixabay.com/en/freelancer-apple-imac-iphone-763730/
 * images/slider/2.jpg CC0 Public Domain Reference: http://pixabay.com/go/?t=%2Fservice%2Fterms%2F%23download_terms, Image Source: https://pixabay.com/en/learn-school-hands-skills-career-586409/

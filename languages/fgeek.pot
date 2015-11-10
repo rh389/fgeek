@@ -51,36 +51,6 @@ msgstr ""
 msgid "WordPress"
 msgstr ""
 
-#: ../sidebar-home.php:27
-msgid "Home Col Widget 1"
-msgstr ""
-
-#: ../sidebar-home.php:34
-msgid ""
-"This is first homepage widget area. To customize it, please navigate to "
-"Admin Panel -> Appearance -> Widgets and add widgets to Homepage Column #1."
-msgstr ""
-
-#: ../sidebar-home.php:51
-msgid "Home Col Widget 2"
-msgstr ""
-
-#: ../sidebar-home.php:58
-msgid ""
-"This is second homepage widget area. To customize it, please navigate to "
-"Admin Panel -> Appearance -> Widgets and add widgets to Homepage Column #2."
-msgstr ""
-
-#: ../sidebar-home.php:75
-msgid "Home Col Widget 3"
-msgstr ""
-
-#: ../sidebar-home.php:82
-msgid ""
-"This is third homepage widget area. To customize it, please navigate to "
-"Admin Panel -> Appearance -> Widgets and add widgets to Homepage Column #3."
-msgstr ""
-
 #: ../comments.php:54
 #: ../content-page.php:37
 #: ../content.php:66

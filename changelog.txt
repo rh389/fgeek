@@ -1,3 +1,30 @@
+fGeek 1.0.5, 2015-10-26
+------------------------
+remove unused file sidebar-home.php.
+escape title in content.php L19
+add missing slider images
+fix issue with loading of slider content
+added wp_kses_post instead of force_balance_tags
+full-width-template and fixed-layout removed from style.css
+license reference for Google Fonts used in theme added in readme.txt
+
+fGeek 1.0.4, 2015-10-11
+------------------------
+- update theme screenshot
+
+
+fGeek 1.0.3, 2015-10-11
+------------------------
+- add text-domain to style.css
+
+fGeek 1.0.2, 2015-08-31
+------------------------
+- remove unecessary code
+
+fGeek 1.0.1, 2015-08-30
+------------------------
+- Add front-page.php
+
 fGeek 1.0.0, 2015-08-30
 ------------------------
 - Initial release

@@ -16,7 +16,7 @@
 
 	<?php if ( !is_single() ) :
 	
-			echo '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark" title="'.get_the_title().'">'.get_the_title().'</a></h1>';
+			echo '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark" title="' . esc_attr( get_the_title() ) .'">' . get_the_title() . '</a></h1>';
 	
 		  else:
 

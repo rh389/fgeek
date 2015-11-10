@@ -4,8 +4,9 @@ Description: fGeek is a 100% Responsive WordPress Theme, a perfect choice for a 
 Theme URI: https://tishonator.com/product/fgeek
 Author: tishonator
 Author URI: https://tishonator.com
-Version: 1.0.0
-Tags: blue, white, gray, light, two-columns, right-sidebar, fixed-layout, fluid-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
+Version: 1.0.5
+Text Domain: fgeek
+Tags: blue, white, gray, light, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, post-formats, sticky-post, threaded-comments, translation-ready
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -1275,14 +1276,7 @@ img.wp-post-image {
 	margin:-5px 0 10px 13px;
 }
 
-#page-header {
-	background-image:url('images/pageheader.png');
-	background-repeat: repeat;
-	-webkit-box-shadow: inset 0 -1px 1px -1px rgba(0, 0, 0, 0.25);
-	-moz-box-shadow: inset 0 -1px 1px -1px rgba(0, 0, 0, 0.25);
-	box-shadow: 0 -1px 1px -1px rgba(0, 0, 0, 0.25) inset;
-	padding:20px 2% 20px 2%;
-}
+
 
 #page-header,
 #page-header h1 {

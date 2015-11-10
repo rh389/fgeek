@@ -103,15 +103,6 @@ function fgeek_setup() {
 endif; // fgeek_setup
 add_action( 'after_setup_theme', 'fgeek_setup' );
 
-function fgeek_post_classes( $classes ) {
-	if ( ! post_password_required() && ! is_attachment() && has_post_thumbnail() ) {
-		$classes[] = 'has-post-thumbnail';
-	}
-
-	return $classes;
-}
-add_filter( 'post_class', 'fgeek_post_classes' );
-
 /**
  * the main function to load scripts in the fGeek theme
  * if you add a new load of script, style, etc. you can use that function
@@ -125,9 +116,9 @@ function fgeek_load_scripts() {
 	wp_enqueue_style( 'fgeek-fonts', fgeek_fonts_url(), array(), null );
 	
 	// Load thread comments reply script
-	if ( is_singular() ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+        wp_enqueue_script( 'comment-reply' );
+    }
 	
 	// Load Utilities JS Script
 	wp_enqueue_script( 'fgeek-js', get_template_directory_uri() . '/js/utilities.js', array( 'jquery' ) );
@@ -325,8 +316,8 @@ function fgeek_display_slider() { ?>
 					
 					$defaultSlideImage = get_template_directory_uri().'/images/slider/' . $i .'.jpg';
 
-					$slideContent = get_theme_mod( 'fpsychology_slide'.$i.'_content', html_entity_decode( $defaultSlideContent ) );
-					$slideImage = get_theme_mod( 'fpsychology_slide'.$i.'_image', $defaultSlideImage );
+					$slideContent = get_theme_mod( 'fgeek_slide'.$i.'_content', html_entity_decode( $defaultSlideContent ) );
+					$slideImage = get_theme_mod( 'fgeek_slide'.$i.'_image', $defaultSlideImage );
 
 				?>
 					<li>
@@ -357,8 +348,6 @@ function fgeek_get_customizer_sectoin_info() {
  * Register theme settings in the customizer
  */
 function fgeek_customize_register( $wp_customize ) {
-
-	$premiumThemeUrl = 'https://tishonator.com/product/tgeek';
 
     /**
 	 * Add Social Sites Section
@@ -617,7 +606,7 @@ function fgeek_customize_register( $wp_customize ) {
 		'fgeek_slide1_content',
 		array(
 		    'default'           => __( '<h2>Lorem ipsum dolor</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a class="btn" title="Read more" href="#">Read more</a>', 'fgeek' ),
-		    'sanitize_callback' => 'force_balance_tags',
+		    'sanitize_callback' => 'wp_kses_post',
 		)
 	);
 
@@ -653,7 +642,7 @@ function fgeek_customize_register( $wp_customize ) {
 		'fgeek_slide2_content',
 		array(
 		    'default'           => __( '<h2>Lorem ipsum dolor</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a class="btn" title="Read more" href="#">Read more</a>', 'fgeek' ),
-		    'sanitize_callback' => 'force_balance_tags',
+		    'sanitize_callback' => 'wp_kses_post',
 		)
 	);
 
@@ -689,7 +678,7 @@ function fgeek_customize_register( $wp_customize ) {
 		'fgeek_slide3_content',
 		array(
 		    'default'           => __( '<h2>Lorem ipsum dolor</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a class="btn" title="Read more" href="#">Read more</a>', 'fgeek' ),
-		    'sanitize_callback' => 'force_balance_tags',
+		    'sanitize_callback' => 'wp_kses_post',
 		)
 	);
 
@@ -716,79 +705,6 @@ function fgeek_customize_register( $wp_customize ) {
 				'label'   	 => __( 'Slide 3 Image', 'fgeek' ),
 				'section' 	 => 'fgeek_slider_section',
 				'settings'   => 'fgeek_slide3_image',
-			) 
-		)
-	);
-
-
-	// Add slide 4 content
-	$wp_customize->add_setting(
-		'fgeek_slide4_content',
-		array(
-		    'default'           => __( '<h2>Lorem ipsum dolor</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a class="btn" title="Read more" href="#">Read more</a>', 'fgeek' ),
-		    'sanitize_callback' => 'force_balance_tags',
-		)
-	);
-
-	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'fgeek_slide4_content',
-        array(
-            'label'          => __( 'Slide #4 Content', 'fgeek' ),
-            'section'        => 'fgeek_slider_section',
-            'settings'       => 'fgeek_slide4_content',
-            'type'           => 'textarea',
-            )
-        )
-	);
-	
-	// Add slide 4 background image
-	$wp_customize->add_setting( 'fgeek_slide4_image',
-		array(
-			'default' => get_template_directory_uri().'/images/slider/' . '4.jpg',
-    		'sanitize_callback' => 'esc_url_raw'
-		)
-	);
-
-    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'fgeek_slide4_image',
-			array(
-				'label'   	 => __( 'Slide 4 Image', 'fgeek' ),
-				'section' 	 => 'fgeek_slider_section',
-				'settings'   => 'fgeek_slide4_image',
-			) 
-		)
-	);
-
-	// Add slide 5 content
-	$wp_customize->add_setting(
-		'fgeek_slide5_content',
-		array(
-		    'default'           => __( '<h2>Lorem ipsum dolor</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a class="btn" title="Read more" href="#">Read more</a>', 'fgeek' ),
-		    'sanitize_callback' => 'force_balance_tags',
-		)
-	);
-
-	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'fgeek_slide5_content',
-        array(
-            'label'          => __( 'Slide #5 Content', 'fgeek' ),
-            'section'        => 'fgeek_slider_section',
-            'settings'       => 'fgeek_slide5_content',
-            'type'           => 'textarea',
-            )
-        )
-	);
-	
-	// Add slide 5 background image
-	$wp_customize->add_setting( 'fgeek_slide5_image',
-		array(
-			'default' => get_template_directory_uri().'/images/slider/' . '5.jpg',
-    		'sanitize_callback' => 'esc_url_raw'
-		)
-	);
-
-    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'fgeek_slide5_image',
-			array(
-				'label'   	 => __( 'Slide 5 Image', 'fgeek' ),
-				'section' 	 => 'fgeek_slider_section',
-				'settings'   => 'fgeek_slide5_image',
 			) 
 		)
 	);
