@@ -25,22 +25,6 @@ jQuery( document ).ready(function() {
 		}
 	});
 
-	jQuery("#navmain > div > ul li").mouseleave( function() {
-		if (fgeek_IsLargeResolution()) {
-			jQuery(this).children("ul").stop(true, true).css('display', 'block').slideUp(300);
-		}
-	});
-	
-	jQuery("#navmain > div > ul li").mouseenter( function() {
-		if (fgeek_IsLargeResolution()) {
-
-			var curMenuLi = jQuery(this);
-			jQuery("#navmain > div > ul > ul:not(:contains('#" + curMenuLi.attr('id') + "')) ul").hide();
-		
-			jQuery(this).children("ul").stop(true, true).css('display','none').slideDown(400);
-		}
-	});
-
 	jQuery('.bxslider').bxSlider();
 });
 

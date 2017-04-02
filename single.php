@@ -2,7 +2,6 @@
 /**
  * The template for displaying all single posts and attachments
  *
- * @package WordPress
  * @subpackage fGeek
  * @author tishonator
  * @since fGeek 1.0.0
@@ -36,20 +35,11 @@
 						'link_after'  => '</span>',
 					) );
 
-?>
-					<div class="post-links">
+					the_post_navigation( array(
 
-						<div class="left">
-							<?php previous_post_link(); ?>
-						</div><!-- .left -->
-						
-						<div class="right">
-							<?php next_post_link(); ?>
-						</div><!-- .right -->
-
-					</div><!-- .post-links -->
-
-		<?php
+                        'prev_text' => __( 'Previous Post: %title', 'fgeek' ),
+                        'next_text' => __( 'Next Post: %title', 'fgeek' ),
+                    ) );
 				
 				endwhile;
 	?>

@@ -4,7 +4,6 @@
  *
  * Displays all of the head element and everything up until the "body-content-wrapper" div.
  *
- * @package WordPress
  * @subpackage fGeek
  * @author tishonator
  * @since fGeek 1.0.0
@@ -30,7 +29,7 @@
 					</div><!-- #header-top -->
 
 					<div id="header-logo">
-						<?php fgeek_show_website_logo_image_or_title(); ?>
+						<?php fgeek_show_website_logo_image_and_title(); ?>
 					</div><!-- #header-logo -->
 
 					<nav id="navmain">

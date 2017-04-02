@@ -2,7 +2,6 @@
 /**
  * The template for displaying search results pages.
  *
- * @package WordPress
  * @subpackage fGeek
  * @author tishonator
  * @since fGeek 1.0.0
@@ -34,12 +33,12 @@
 					get_template_part( 'content', get_post_format() );
 
 				endwhile;
-	?>
-				<div class="navigation">
-					<?php echo paginate_links( array( 'prev_next' => '', ) ); ?>
-				</div><!-- .navigation -->
+	
+				the_posts_pagination( array(
+		                        'prev_next' => '',
+		                    ) );
 
-	<?php else :
+		else :
 
 				// if no content is loaded, show the 'no found' template
 				get_template_part( 'content', 'none' );

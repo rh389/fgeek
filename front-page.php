@@ -5,7 +5,6 @@
  * This is a traditional static HTML site model with a fixed front page and
  * content placed in Pages, rarely if ever using posts, categories, or tags. 
  *
- * @package WordPress
  * @subpackage fGeek
  * @author tishonator
  * @since fGeek 1.0.1
@@ -40,12 +39,12 @@
 					get_template_part( 'content', get_post_format() );
 
 				endwhile;
-	?>
-				<div class="navigation">
-					<?php echo paginate_links( array( 'prev_next' => '', ) ); ?>
-				</div><!-- #navigation -->
 
-	<?php else :
+				the_posts_pagination( array(
+                        'prev_next' => '',
+                    ) );
+
+		  else :
 
 				// if no content is loaded, show the 'no found' template
 				get_template_part( 'content', 'none' );

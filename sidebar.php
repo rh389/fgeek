@@ -2,7 +2,6 @@
 /**
  * The sidebar containing the main widget area
  *
- * @package WordPress
  * @subpackage fGeek
  * @author tishonator
  * @since fGeek 1.0.0

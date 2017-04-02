@@ -9,7 +9,6 @@
  * new template file for each one. For example, tag.php (Tag archives),
  * category.php (Category archives), author.php (Author archives), etc.
  *
- * @package WordPress
  * @subpackage fGeek
  * @author tishonator
  * @link https://codex.wordpress.org/Template_Hierarchy
@@ -35,11 +34,12 @@ get_header(); ?>
 					get_template_part( 'content', get_post_format() );
 
 				endwhile;
-	?>
-				<div class="navigation">
-					<?php echo paginate_links( array( 'prev_next' => '', ) ); ?>
-				</div><!-- .navigation --> 
-	<?php else :
+
+				the_posts_pagination( array(
+		                        'prev_next' => '',
+		                    ) );
+	 
+		 else :
 
 				// if no content is loaded, show the 'no found' template
 				get_template_part( 'content', 'none' );

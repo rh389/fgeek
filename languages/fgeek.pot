@@ -92,7 +92,7 @@ msgid "Tags:"
 msgstr ""
 
 #: ../functions.php:52
-msgid "primary menu"
+msgid "Primary Menu"
 msgstr ""
 
 #: ../functions.php:180
@@ -278,4 +278,58 @@ msgstr ""
 
 #: ../functions.php:820
 msgid "Copyright Text"
+msgstr ""
+
+#: functions.php:255
+msgid "Footer Column #1"
+msgstr ""
+
+#: functions.php:257
+msgid "The Footer Column #1 widget area"
+msgstr ""
+
+#: functions.php:266
+msgid "Footer Column #2"
+msgstr ""
+
+#: functions.php:268
+msgid "The Footer Column #2 widget area"
+msgstr ""
+
+#: functions.php:277
+msgid "Footer Column #3"
+msgstr ""
+
+#: functions.php:279
+msgid "The Footer Column #3 widget area"
+msgstr ""
+
+#: sidebar-footer.php:26
+msgid "Footer Col Widget 1"
+msgstr ""
+
+#: sidebar-footer.php:33
+msgid ""
+"This is first footer widget area. To customize it, please navigate to Admin "
+"Panel -> Appearance -> Widgets and add widgets to Footer Column #1."
+msgstr ""
+
+#: sidebar-footer.php:50
+msgid "Footer Col Widget 2"
+msgstr ""
+
+#: sidebar-footer.php:57
+msgid ""
+"This is second footer widget area. To customize it, please navigate to Admin "
+"Panel -> Appearance -> Widgets and add widgets to Footer Column #2."
+msgstr ""
+
+#: sidebar-footer.php:74
+msgid "Footer Col Widget 3"
+msgstr ""
+
+#: sidebar-footer.php:81
+msgid ""
+"This is third footer widget area. To customize it, please navigate to Admin "
+"Panel -> Appearance -> Widgets and add widgets to Footer Column #3."
 msgstr ""
