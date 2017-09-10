@@ -25,7 +25,7 @@ jQuery( document ).ready(function() {
 		}
 	});
 
-	jQuery('.bxslider').bxSlider();
+	jQuery('.bxslider').bxSlider({ auto: true, pager: false, controls: false, pause: 5000, speed: 1000 });
 });
 
 function fgeek_IsSmallResolution() {
