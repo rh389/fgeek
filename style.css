@@ -1,15 +1,16 @@
-/*!
-Theme Name: fGeek
-Description: fGeek is a 100% Responsive WordPress Theme, a perfect choice for a geek website or blog about programming, learning, geek stuff, news, etc. Features: Social icons in header: Facebook, Google+, Twitter, LinkedIn, Instagram, RSS Feeds, Tumblr, YouTube, Pinterest, Flickr, Vine, Multi-Level Drop-Down Header Menu, Admin Customize Options (Social Sites, Slider Images and Content, Header Logo and Footer Copyright Text), Multiple Browser Compatible (IE9, IE10, IE11, Chrome, Firefox, Opera, and Safari), Full-Width Page Template, FontAwesome Integration, Sidebar  Widget Area, W3C Markup Validated, Search Engine Optimized (SEO), Mobile-Friendly, and Translation Ready.
-Theme URI: https://tishonator.com/product/fgeek
-Author: tishonator
-Author URI: https://tishonator.com
-Version: 1.0.9
-Text Domain: fgeek
-Tags: education, blog, entertainment, news, two-columns, custom-logo, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, post-formats, threaded-comments, translation-ready, sticky-post, theme-options, footer-widgets, full-width-template, front-page-post-form
-License: GNU General Public License v2.0
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-*/
+/**
+ * Theme Name: fGeek
+ * Description: fGeek is a 100% Responsive WordPress Theme, a perfect choice for a geek website or blog about programming, learning, geek stuff, news, etc. Features: Social icons in header: Facebook, Google+, Twitter, LinkedIn, Instagram, RSS Feeds, Tumblr, YouTube, Pinterest, Flickr, Vine, Multi-Level Drop-Down Header Menu, Admin Customize Options (Social Sites, Slider Images and Content, Header Logo and Footer Copyright Text), Multiple Browser Compatible (IE9, IE10, IE11, Chrome, Firefox, Opera, and Safari), Full-Width Page Template, FontAwesome Integration, Sidebar  Widget Area, W3C Markup Validated, Search Engine Optimized (SEO), Mobile-Friendly, and Translation Ready.
+ * Theme URI: https://tishonator.com/product/fgeek
+ * Author: tishonator
+ * Author URI: https://tishonator.com
+ * GitHub Theme URI: https://github.com/rh389/fgeek
+ * Version: 1.0.9
+ * Text Domain: fgeek
+ * Tags: education, blog, entertainment, news, two-columns, custom-logo, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, post-formats, threaded-comments, translation-ready, sticky-post, theme-options, footer-widgets, full-width-template, front-page-post-form
+ * License: GNU General Public License v2.0
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ */
 
 /* general styles */
 body {
