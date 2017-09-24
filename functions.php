@@ -268,7 +268,7 @@ function fgeek_show_copyright_text() {
 
 	if ( !empty( $footerText ) ) {
 
-		echo esc_html( $footerText ) . ' | ';		
+		echo esc_html( $footerText );		
 	}
 }
 
