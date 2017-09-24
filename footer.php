@@ -24,9 +24,12 @@
 					<div id="copyright">
 
 						<p>
-						 <?php fgeek_show_copyright_text(); ?> <a href="<?php echo esc_url( 'https://tishonator.com/product/fgeek' ); ?>" title="<?php esc_attr_e( 'fgeek Theme', 'fgeek' ); ?>">
-							<?php _e('fGeek Theme', 'fgeek'); ?></a> <?php esc_attr_e( 'powered by', 'fgeek' ); ?> <a href="<?php echo esc_url( 'http://wordpress.org/' ); ?>" title="<?php esc_attr_e( 'WordPress', 'fgeek' ); ?>">
-							<?php _e('WordPress', 'fgeek'); ?></a>
+						 <?php fgeek_show_copyright_text(); ?>
+						<a href="<?php echo esc_url( 'https://tishonator.com/product/fgeek' ); ?>" title="<?php esc_attr_e( 'fgeek Theme', 'fgeek' ); ?>"><?php _e('fGeek Theme', 'fgeek'); ?></a> 
+						<span class="footer-wp-attr">
+							<?php esc_attr_e( 'powered by', 'fgeek' ); ?>
+							<a href="<?php echo esc_url( 'http://wordpress.org/' ); ?>" title="<?php esc_attr_e( 'WordPress', 'fgeek' ); ?>"><?php _e('WordPress', 'fgeek'); ?></a>
+						</span>
 						</p>
 						
 					</div><!-- #copyright -->
